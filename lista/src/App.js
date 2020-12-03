@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import './App.css';
 //Importando componentes
 import Form from "./components/Form"
@@ -10,6 +11,7 @@ function App() {
         <h1>Minha lista de compras</h1>
       </header>
       <Form />
+      <Todolist />
     </div>
   );
 }
