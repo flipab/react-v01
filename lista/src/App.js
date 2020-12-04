@@ -5,12 +5,14 @@ import Form from "./components/Form"
 import Todolist from "./components/Todolist"
 
 function App() {
+  const [inputText, setInputText] = useState("");
+  const [todos, setTodos] = useState([]);
   return (
     <div className="App">
       <header>
         <h1>Minha lista de compras</h1>
       </header>
-      <Form />
+      <Form inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText} />
       <Todolist />
     </div>
   );
