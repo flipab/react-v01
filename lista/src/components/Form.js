@@ -6,7 +6,7 @@ const Form = ({ setInputText,todos,setTodos,inputText }) => {
     console.log(e.target.value);
     setInputText(e.target.value);
     setTodos([
-    ...todos, {text: inputText, completed: false, id: Math.random() * 1000 },
+    ...todos, {text: inputText, completed: false, id: Math.random() * 1000 },//array com reticencias?, id random math x 1000
     ])
   }
 
