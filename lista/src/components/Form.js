@@ -8,7 +8,7 @@ const Form = ({ setInputText,todos,setTodos,inputText }) => {
     setTodos([
     ...todos, { text: inputText, completed: false, id: Math.random() * 1000 }, //array com reticencias?, id random math x 1000
     ]);
-   setInputText("");//isso esta quebrando os inputs do meu form
+   setInputText("");
   }
 
 const submitTodoHandler = (e) => {
