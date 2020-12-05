@@ -2,13 +2,12 @@ import React from "react";
 //import components, criei todo.js
 import Todo from "./Todo";
 
-const Todolist = () => {
+const Todolist = ({ todos }) => {
+  console.log(todos);
 return ( 
 <div className="todo-container">
       <ul className="todo-list">
-        <Todo />
-        <Todo />
-        <Todo />
+      
       </ul>
     </div>
   );
