@@ -1,19 +1,18 @@
 import React from "react";
 
 //abaixo simplifiquei a props, adciionando {setInputText} dentro do (), ver com o professor
-const Form = ({ setInputText,todos,setTodos,inputText }) => {
+const Form = ({ setInputText, todos, setTodos, inputText }) => {
   const inputTextHandler = (e) => {
     console.log(e.target.value);
     setInputText(e.target.value);
-    setTodos([
-    ...todos, { text: inputText, completed: false, id: Math.random() * 1000 }, //array com reticencias?, id random math x 1000
-    ]);
    setInputText("");
   }
 
 const submitTodoHandler = (e) => {
- e.preventDefault();
- 
+e.preventDefault();
+setTodos([
+  ...todos, { text: inputText, completed: false, id: Math.random() * 1000 }, //array com reticencias?, id random math x 1000
+  ]);
 };
 
 return ( 
