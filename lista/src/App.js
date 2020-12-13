@@ -31,6 +31,7 @@ function App() {
 
     }
   }
+
   return (
     <div className="App">
       <header>
@@ -41,10 +42,14 @@ function App() {
       todos={todos} 
       setTodos={setTodos} 
       setInputText={setInputText} 
-      setStatus={setStatus} />
+      setStatus={setStatus}  
+      filteredTodos={filteredTodos}
+      />
+    
       <Todolist 
       todos={todos} 
       setTodos={setTodos}
+      filteredTodos={filteredTodos}
       />
     </div>
   );

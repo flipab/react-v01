@@ -2,11 +2,11 @@ import React from "react";
 //import components, criei todo.js
 import Todo from "./Todo";
 
-const Todolist = ({ todos, setTodos }) => {
+const Todolist = ({ todos, setTodos, filteredTodos }) => {
 return ( 
 <div className="todo-container">
       <ul className="todo-list">
-      {todos.map((todo) => (
+      {filteredTodos.map((todo) => (
         <Todo 
         key={todo.id} 
         text={todo.text} 
