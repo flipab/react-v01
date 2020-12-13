@@ -132,9 +132,20 @@ select {
   cursor: pointer;
   pointer-events: none;
 }
-/* Transition */
-/*
-.select:hover::after {
-  transform: scale(1.5);
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: #e2634056;
 }
-*/
+
+.nav-links{
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+
+
+}

@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Todo = ({ text, todo, todos, setTodos }) => {
   //events
   const deleteHandler = () => {

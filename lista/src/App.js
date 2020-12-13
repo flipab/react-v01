@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
-import './App.css';
+
 //Importando componentes
 import Form from "./components/Form"
 import Todolist from "./components/Todolist"
+import './App.css';
+import Nav from "./components/Nav";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
 
 function App() {
 
@@ -48,11 +53,14 @@ useEffect(() => {
    
 
   return (
+    <Router>
     <div className="App">
+      <Nav />
       <header>
         <h1>Minha lista de compras</h1>
       </header>
-      <Form 
+      <switch>
+      <Route path="/components/form" component={Form} 
       inputText={inputText} 
       todos={todos} 
       setTodos={setTodos} 
@@ -61,12 +69,14 @@ useEffect(() => {
       filteredTodos={filteredTodos}
       />
     
-      <Todolist 
+      <Route path="/components/todolist" component={Todolist}
       todos={todos} 
       setTodos={setTodos}
       filteredTodos={filteredTodos}
       />
+      </switch>
     </div>
+    </Router>
   );
 }
 

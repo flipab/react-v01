@@ -2,6 +2,7 @@ import React from "react";
 //import components, criei todo.js
 import Todo from "./Todo";
 
+
 const Todolist = ({ todos, setTodos, filteredTodos }) => {
 return ( 
 <div className="todo-container">
