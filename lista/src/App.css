@@ -93,6 +93,7 @@ form button:hover {
 
 .completed {
   text-decoration: line-through;
+  color: #6cda62;
   opacity: 0.5;
 }
 
